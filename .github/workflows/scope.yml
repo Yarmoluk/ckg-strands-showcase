@@ -1,0 +1,23 @@
+name: Public package checks
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  scope:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check explicit presentation-only inventory
+        run: |
+          python3 - <<'PY'
+          import subprocess
+          allowed = {
+              'README.md', 'RESULTS.md', 'social/post.md',
+              'docs/index.html', 'docs/style.css',
+              'docs/assets/ckg-strands.png',
+              '.github/workflows/pages.yml', '.github/workflows/scope.yml',
+          }
+          actual = set(subprocess.check_output(['git', 'ls-files'], text=True).splitlines())
+          assert actual == allowed, f'Unexpected or missing files: {actual ^ allowed}'
+          print('Only the eight approved presentation files are tracked.')
+          PY
