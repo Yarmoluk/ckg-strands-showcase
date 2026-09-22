@@ -6,7 +6,10 @@
 
 [![Public package checks](https://github.com/Yarmoluk/ckg-strands-showcase/actions/workflows/scope.yml/badge.svg)](https://github.com/Yarmoluk/ckg-strands-showcase/actions/workflows/scope.yml)
 [![Website](https://github.com/Yarmoluk/ckg-strands-showcase/actions/workflows/pages.yml/badge.svg)](https://github.com/Yarmoluk/ckg-strands-showcase/actions/workflows/pages.yml)
-[![Scope](https://img.shields.io/badge/public_scope-showcase_only-79ddf2)](#what-is-public)
+[![Last update](https://img.shields.io/github/last-commit/Yarmoluk/ckg-strands-showcase?label=last%20update)](https://github.com/Yarmoluk/ckg-strands-showcase/commits/main/)
+
+[![Tested Python](https://img.shields.io/badge/tested_Python-3.13-3776AB?logo=python&logoColor=white)](RESULTS.md#validation)
+[![Tested Strands SDK](https://img.shields.io/badge/tested_Strands_SDK-1.56.0-79ddf2)](RESULTS.md#validation)
 [![Implementation](https://img.shields.io/badge/implementation-private-b4ef7c)](#what-is-public)
 [![Graph](https://img.shields.io/badge/graph-not_distributed-79ddf2)](#what-is-public)
 [![Validation](https://img.shields.io/badge/private_demo-55_tests_passed-b4ef7c)](RESULTS.md#validation)

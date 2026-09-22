@@ -37,7 +37,7 @@ The combined router has not yet been evaluated against these arms on equivalent 
 
 ## Validation
 
-The private implementation passed 55 Python tests covering traversal, routing, parsing, context injection, and provider cleanup. SDK/provider tests used simulated HTTP responses. These checks validate behavior, not live model quality.
+The private implementation passed 55 Python tests covering traversal, routing, parsing, context injection, and provider cleanup. The tested environment used Python 3.13, Strands Agents 1.56.0, and Anthropic 0.125.0. SDK/provider tests used simulated HTTP responses. These checks validate behavior, not live model quality.
 
 The public workflow checks only the showcase's allowed file inventory. It does not run or expose the private implementation.
 
